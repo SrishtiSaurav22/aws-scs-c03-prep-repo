@@ -2,11 +2,11 @@
 
 This is a public website to hold my personal notes for my preparation for taking up the AWS Certified Security Specialty (SCS-C03), hosted using GitHub pages.
 
-You can chekc out my repository here:  
-[+] https://github.com/SrishtiSaurav22/aws-scs-c03-prep-repo
+You can check out my repository here:  
+[](https://github.com/SrishtiSaurav22/aws-scs-c03-prep-repo)
 
 I've also opened up the discussions tab in my repo if anyone has any queries, suggestions, or just general points if you'd like to bring up any:  
-[+] https://github.com/SrishtiSaurav22/aws-scs-c03-prep-repo/discussions
+[](https://github.com/SrishtiSaurav22/aws-scs-c03-prep-repo/discussions)
 
 **PS:**
 Please be respectful and collaborative. 
@@ -34,13 +34,13 @@ AI-assisted and checked by me; they may be wrong. Third-party content and questi
 
 ## Licensing
 Content on this site is licensed under **CC BY-SA 4.0**:  
-[+] https://github.com/SrishtiSaurav22/aws-scs-c03-prep-repo/blob/main/LICENSE
+[+] [https://github.com/SrishtiSaurav22/aws-scs-c03-prep-repo/blob/main/LICENSE](https://github.com/SrishtiSaurav22/aws-scs-c03-prep-repo/blob/main/LICENSE)
 
 Portions are adapted from the official AWS Documentation (CC BY-SA 4.0):  
-[+] https://creativecommons.org/licenses/by-sa/4.0/
+[+] [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
 
 And code from AWS documentation is MIT-0:  
-[+] https://opensource.org/license/mit-0
+[+] [https://opensource.org/license/mit-0](https://opensource.org/license/mit-0)
 
 Quoted material from other authors belongs to them and is linked where it appears.
 
@@ -49,4 +49,4 @@ Inc. or its affiliates.
 
 ## Copyright
 SCS-C03 Study Notes © 2026 Srishti Saurav, licensed under CC BY-SA 4.0
-(https://creativecommons.org/licenses/by-sa/4.0/).
+[https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/).
