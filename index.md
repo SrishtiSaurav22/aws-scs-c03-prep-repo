@@ -19,6 +19,9 @@ Please be respectful and collaborative.
 * [Domain 5: Data Protection]()
 * [Domain 6: Security Foundations and Governance]()
 
+Reference:  
+[+] [https://docs.aws.amazon.com/pdfs/aws-certification/latest/security-specialty-03/security-specialty-03.pdf](https://docs.aws.amazon.com/pdfs/aws-certification/latest/security-specialty-03/security-specialty-03.pdf)
+
 ## Disclaimer
 This is a personal study and notes site for the AWS Certified Security Specialty (SCS-C03) exam. 
 
