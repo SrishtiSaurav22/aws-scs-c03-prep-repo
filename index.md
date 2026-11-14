@@ -1,4 +1,4 @@
-# AWS Certified Security Specialty Certificate Preparation Notes
+# AWS Certified Security Specialty Certificate (SCS-C03) Preparation Notes
 
 This is a public website to hold my personal notes for my preparation for taking up the AWS Certified Security Specialty (SCS-C03), hosted using GitHub pages.
 
