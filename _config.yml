@@ -3,9 +3,4 @@ description: Personal study notes for the AWS Certified Security Specialty (SCS-
 theme: jekyll-theme-primer
 
 exclude:
-  - README.mdtitle: AWS Certified Security Specialty (SCS-C03) Study Notes
-description: Personal study notes for the AWS Certified Security Specialty (SCS-C03) exam.
-theme: jekyll-theme-primer
-
-exclude:
   - README.md
