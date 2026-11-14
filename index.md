@@ -12,12 +12,13 @@ I've also opened up the discussions tab in my repo if anyone has any queries, su
 Please be respectful and collaborative. 
 
 ## Notes
-* [Domain 1: Detection]()
-* [Domain 2: Incident Response]()
-* [Domain 3: Infrastructure Security]()
-* [Domain 4: Identity and Access Management]()
-* [Domain 5: Data Protection]()
-* [Domain 6: Security Foundations and Governance]()
+* [Domain 1: Detection](https://github.com/SrishtiSaurav22/aws-scs-c03-prep-repo/blob/main/domain-1-detection.md)
+* [Domain 2: Incident Response](https://github.com/SrishtiSaurav22/aws-scs-c03-prep-repo/blob/main/domain-2-incident-response.md)
+* [Domain 3: Infrastructure Security](https://github.com/SrishtiSaurav22/aws-scs-c03-prep-repo/blob/main/domain-3-infrastructure-security.md)
+* [Domain 4: Identity and Access Management](https://github.com/SrishtiSaurav22/aws-scs-c03-prep-repo/blob/main/domain-4-identity-and-access-management.md)
+* [Domain 5: Data Protection](https://github.com/SrishtiSaurav22/aws-scs-c03-prep-repo/blob/main/domain-5-data-protection.md)
+* [Domain 6: Security Foundations and Governance](https://github.com/SrishtiSaurav22/aws-scs-c03-prep-repo/blob/main/domain-6-security-foundations-and-governance.md)
+* [Other Services](https://github.com/SrishtiSaurav22/aws-scs-c03-prep-repo/blob/main/other-services.md)
 
 Reference:  
 [+] [https://docs.aws.amazon.com/pdfs/aws-certification/latest/security-specialty-03/security-specialty-03.pdf](https://docs.aws.amazon.com/pdfs/aws-certification/latest/security-specialty-03/security-specialty-03.pdf)
