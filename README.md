@@ -1,4 +1,4 @@
-# AWS Certified Security – Specialty (SCS-C03) Study Notes
+# AWS Certified Security Specialty (SCS-C03) Study Notes
 
 My personal study notes for the SCS-C03 exam, published with GitHub Pages:  
 [+] https://srishtisaurav22.github.io/aws-scs-c03-prep-repo/
