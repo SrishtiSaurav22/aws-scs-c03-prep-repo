@@ -1,12 +1,12 @@
-# AWS Certified Security Specialty Certificate Preparation
+# AWS Certified Security Specialty Certificate Preparation Notes
 
 This is a public website to hold my personal notes for my preparation for taking up the AWS Certified Security Specialty (SCS-C03), hosted using GitHub pages.
 
 You can check out my repository here:  
-[](https://github.com/SrishtiSaurav22/aws-scs-c03-prep-repo)
+[+] [https://github.com/SrishtiSaurav22/aws-scs-c03-prep-repo](https://github.com/SrishtiSaurav22/aws-scs-c03-prep-repo)
 
 I've also opened up the discussions tab in my repo if anyone has any queries, suggestions, or just general points if you'd like to bring up any:  
-[](https://github.com/SrishtiSaurav22/aws-scs-c03-prep-repo/discussions)
+[+] [https://github.com/SrishtiSaurav22/aws-scs-c03-prep-repo/discussions](https://github.com/SrishtiSaurav22/aws-scs-c03-prep-repo/discussions)
 
 **PS:**
 Please be respectful and collaborative. 
