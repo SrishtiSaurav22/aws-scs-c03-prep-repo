@@ -88,19 +88,21 @@ arn:aws:iam::<account-id>:<entity-type>/<division>/<sub-division>/<entity-name-o
 "Id" allows alphanumeric characters, hyphens, and underscores.
 "Sid" only allows alphanumeric characters
 
-Case sensitivity in IAM policies:  
+Case sensitivity in IAM policies:
+
 | Policy element | Case sensitive? | Details |
 | --- | --- | --- |
-| Effect, Action, Resourcem, Condition | NO | "Effect": "Allow" is same as  "effect": "allow" |
-| Action, Service prefixes| NO | iam:ListAccessKeys is same as IAM:listaccesskeys |
-| Resource ARNs | YES | |
-| Principals | YES | |
-| Condition key names | NO | aws:SourceIP is same as AWS:SourceIp |
-| Condition values | YES, NO | YES in general. NO when using operators like StringEqualsIgnoreCase |
-| Policy variables | NO | Variables names placeholders, like  ${aws:username} | 
-| Policy names | NO |  |
-| Tags keys | NO |  |
-| Tag values | YES, NO | YES in general, unless you're using a IgnoreCase operator |
+| `Effect` value | YES | Only `Allow` or `Deny`; `"allow"` is not valid |
+| Action (service prefix and action name) | NO | `iam:ListAccessKeys` is the same as `IAM:listaccesskeys` |
+| Resource ARNs | YES | Matched exactly, e.g. role and bucket names inside the ARN |
+| Principal ARNs | YES | Matched exactly, e.g. `role/Admin` is not `role/admin` |
+| Condition key names | NO | `aws:SourceIp` is the same as `AWS:SourceIp` |
+| Condition values | Depends | YES with `StringEquals`, `StringLike`, `ArnLike`; NO with `StringEqualsIgnoreCase` |
+| Policy variable names | NO | `${aws:CurrentTime}` is the same as `${AWS:currenttime}` |
+| IAM names (users, roles, policies) | Depends | Must be unique ignoring case, but are case-sensitive inside ARNs in policies |
+| Tag keys in conditions | NO | `aws:ResourceTag/TagKey1` matches `TagKey1` or `tagkey1`, but some services allow keys differing only by case (`ec2` and `EC2`) |
+| Tag values | Depends | YES with `StringEquals`; NO with an `IgnoreCase` operator |
+
 
 5. IAM policy effect-action table  
 ![IAM policy effect-action table](assets/images/iam-policy-effect-action-table.drawio.png)
