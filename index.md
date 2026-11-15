@@ -12,13 +12,13 @@ I've also opened up the discussions tab in my repo if anyone has any queries, su
 Please be respectful and collaborative. 
 
 ## Notes
-* [Domain 1: Detection](domain-1-detection.md)
-* [Domain 2: Incident Response](domain-2-incident-response.md)
-* [Domain 3: Infrastructure Security](domain-3-infrastructure-security.md)
-* [Domain 4: Identity and Access Management](domain-4-identity-and-access-management.md)
-* [Domain 5: Data Protection](domain-5-data-protection.md)
-* [Domain 6: Security Foundations and Governance](domain-6-security-foundations-and-governance.md)
-* [Other Services](other-services.md)
+* [Domain 1: Detection](domain-1-detection.md) (NOT STARTED)
+* [Domain 2: Incident Response](domain-2-incident-response.md) (NOT STARTED)
+* [Domain 3: Infrastructure Security](domain-3-infrastructure-security.md)(NOT STARTED)
+* [Domain 4: Identity and Access Management](domain-4-identity-and-access-management.md) (IN PROGRESS)
+* [Domain 5: Data Protection](domain-5-data-protection.md) (NOT STARTED)
+* [Domain 6: Security Foundations and Governance](domain-6-security-foundations-and-governance.md) (NOT STARTED)
+* [Other Services](other-services.md) (NOT STARTED)
 
 Reference:  
 [+] [https://docs.aws.amazon.com/pdfs/aws-certification/latest/security-specialty-03/security-specialty-03.pdf](https://docs.aws.amazon.com/pdfs/aws-certification/latest/security-specialty-03/security-specialty-03.pdf)
