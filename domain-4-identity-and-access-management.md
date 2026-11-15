@@ -103,7 +103,7 @@ Case sensitivity in IAM policies:
 | Tag values | YES, NO | YES in general, unless you're using a IgnoreCase operator |
 
 5. IAM policy effect-action table  
-![](images/iam-policy-effect-action-table.drawio.png)
+![IAM policy effect-action table](assets/images/iam-policy-effect-action-table.drawio.png)
 
 6. AWS ARN Format  
 ```
