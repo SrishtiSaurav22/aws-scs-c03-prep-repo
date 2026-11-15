@@ -96,14 +96,14 @@ Case sensitivity in IAM policies:
 | Resource ARNs | YES | |
 | Principals | YES | |
 | Condition key names | NO | aws:SourceIP is same as AWS:SourceIp |
-| Condition values | YES, NO | YES in geenral. NO when using operators like StringEqualsIgnoreCase |
+| Condition values | YES, NO | YES in general. NO when using operators like StringEqualsIgnoreCase |
 | Policy variables | NO | Variables names placeholders, like  ${aws:username} | 
 | Policy names | NO |  |
 | Tags keys | NO |  |
 | Tag values | YES, NO | YES in general, unless you're using a IgnoreCase operator |
 
 5. IAM policy effect-action table  
-![](iam-policy-effect-action-table.drawio.png)
+![](images/iam-policy-effect-action-table.drawio.png)
 
 6. AWS ARN Format  
 ```
