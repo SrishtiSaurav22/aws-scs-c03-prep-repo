@@ -178,26 +178,26 @@ Unlike most other AWS service actions, IAM PassRole is NOT an API method even th
 iam:PassRole can be used to prevent the confused deputy problem:  
 [+] [https://blog.rowanudell.com/iam-passrole-explained/](https://blog.rowanudell.com/iam-passrole-explained/)
 
-BUT official AWS’ guidance for preventing the confused deputy problem is using “aws:SourceArn” / “aws:SourceAccount conditions and “sts:ExternalId” for third parties:  
+BUT official AWS’ guidance for preventing the confused deputy problem is using “aws:SourceArn” / “aws:SourceAccount" conditions and “sts:ExternalId” for third parties:  
 [+] [https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html)
 
 #### 12. Principal options in IAM Policies  
-* AWS Account
+* AWS Account  
 ```
 "Principal": { "AWS": "123456789123" }
 ```
  
- * Root user
+ * Root user  
  ```
  "Principal": { "AWS": "arn:aws:iam::123456789123:root" }
  ```
 
-* IAM role
+* IAM role  
 ```
 "Principal": { "AWS": "arn:aws:iam::123456789123:role/role-name" }
 ```
 
-* IAM role sessions
+* IAM role sessions  
 ```
 "Principal": { "AWS": "arn:aws:iam::123456789123:assumed-role/role-name/role-session-name" }
 
@@ -206,17 +206,17 @@ BUT official AWS’ guidance for preventing the confused deputy problem is using
 "Principal": { "Federated": "arn:aws:iam::123456789123:saml-provider/provider-name" }
 ```
 
-* IAM user
+* IAM user  
 ```
 "Principal": { "AWS": "arn:aws:iam::123456789123:user/user-name" }
 ```
 
-* Federated user sessions
+* Federated user sessions  
 ```
 "Principal": { "AWS": "arn:aws:sts::123456789123:federated-user/user-name" }
 ```
 
-* AWS services
+* AWS services  
 ```
 "Principal": {
   "Service": [
@@ -226,7 +226,7 @@ BUT official AWS’ guidance for preventing the confused deputy problem is using
 }
 ```
 
-* All principals
+* All principals  
 ```
 "Principal": { "AWS": "*" }
 "Principal": "*"
@@ -303,4 +303,4 @@ This is how conditions are specified in IAM policies:
 
 The condition context key that you specify in a policy condition can be a global condition context key (with aws: prefix) or a service specific condition context key (with the service's prefix like ec2:InstanceType).
 
-#### 16. IAM Conditiobs: Conditional operators  
+#### 16. IAM Conditions: Conditional operators  
