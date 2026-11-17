@@ -330,5 +330,16 @@ Clarifying the somewhat confusing (for me) language of the statement below abour
 | ForAnyValue:StringNotEquals, ForAnyValue:StringNotEqualsIgnoreCase | Negated matching; at least one context key value in the request must NOT match any of value in the context key in your policy |
 
 **NOTE (This is a common trap):**  
-ForAllValues evaluates to true
+ForAllValues evaluates to true when the key is missing or empty in the request, so an `Allow` can match more than you meant. Pair it with a check that the key is present, or use ForAnyValue where it fits.
+
+**NOTE:**  
+_"All of the values for the condition key in the request must match at least one of the values in your policy."_  
+
+Means:  
+This means that AWS looks at **every single value** the user or service sends in the reqeust payloud and checks if it finds a home inside your policy definition.
+
+* <u>Every request value must be accounted for:</u> If the incoming request passes 3 values (e.g. tags: `dev`,`test`, `staging`), AWS checks _all three of them_.
+* <u>Against your policy values:</u> Your policy lists an allowed set of values (e.g. `["dev", "test"]`).
+* <u>Match rule:</u> Every single value in the request must match _at least one_ value listed in your policy.
+
 
