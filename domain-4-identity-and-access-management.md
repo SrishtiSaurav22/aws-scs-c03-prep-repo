@@ -313,3 +313,22 @@ This is how conditions are specified in IAM policies:
 The condition context key that you specify in a policy condition can be a global condition context key (with aws: prefix) or a service specific condition context key (with the service's prefix like ec2:InstanceType).
 
 #### 16. IAM Conditions: Conditional operators  
+
+[+] [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html)
+
+**NOTE:**   
+Check the above link for a detailed list of operators with examples
+
+**NOTE:**  
+Clarifying the somewhat confusing (for me) language of the statement below abourt multi-valued string operators:
+
+| Condition operator | Description | 
+| --- | --- |
+| ForAllValues:StingEquals, ForAllValues:StringEqualsIgnoreCase | All of the values for the condition key in the request must match at least one of the values in your policy |
+| ForAnyValue: StringEquals, ForAnyValue:StringEqualsIgnoreCase | At least one condition key value in the request must match one of the values in your policy | 
+| ForAllValues:StringNotEquals, ForAllValues:StringNotEqualsIgnoreCase | Negated matching; none of other values of the context key in the request can match any of the context key values in your policy. |
+| ForAnyValue:StringNotEquals, ForAnyValue:StringNotEqualsIgnoreCase | Negated matching; at least one context key value in the request must NOT match any of value in the context key in your policy |
+
+**NOTE (This is a common trap):**  
+ForAllValues evaluates to true
+
