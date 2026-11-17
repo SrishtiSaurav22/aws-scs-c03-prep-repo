@@ -182,51 +182,60 @@ BUT official AWS’ guidance for preventing the confused deputy problem is using
 [+] [https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html)
 
 #### 12. Principal options in IAM Policies  
+
 * AWS Account  
+
 ```
 "Principal": { "AWS": "123456789123" }
 ```
  
  * Root user  
+
  ```
  "Principal": { "AWS": "arn:aws:iam::123456789123:root" }
  ```
 
 * IAM role  
+
 ```
 "Principal": { "AWS": "arn:aws:iam::123456789123:role/role-name" }
 ```
 
-* IAM role sessions  
-```
-"Principal": { "AWS": "arn:aws:iam::123456789123:assumed-role/role-name/role-session-name" }
+* IAM role sessions 
 
-"Principal": { "Federated": "congnito-identity.amazonaws.com" }
+```
+"Principal": { "AWS": "arn:aws:sts::123456789123:assumed-role/role-name/role-session-name" }
+
+"Principal": { "Federated": "cognito-identity.amazonaws.com" }
 
 "Principal": { "Federated": "arn:aws:iam::123456789123:saml-provider/provider-name" }
 ```
 
 * IAM user  
+
 ```
 "Principal": { "AWS": "arn:aws:iam::123456789123:user/user-name" }
 ```
 
 * Federated user sessions  
+
 ```
 "Principal": { "AWS": "arn:aws:sts::123456789123:federated-user/user-name" }
 ```
 
 * AWS services  
+
 ```
 "Principal": {
   "Service": [
     "ecs.amazonaws.com",
-    "elasticloadbalancing.aamazonaws.com"
+    "elasticloadbalancing.amazonaws.com"
   ]
 }
 ```
 
 * All principals  
+
 ```
 "Principal": { "AWS": "*" }
 "Principal": "*"
@@ -253,7 +262,6 @@ Identity based policies are attached to an IAM user, group or role, to define wh
 
 Resource based policies are attachedn to a resource, to define who can access the resource and what actions they can perform on it.
 
-
 [+] [https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html)
 
 **NOTE:**  
@@ -276,7 +284,7 @@ An IdP is an external system that stores, manages, and authenticates user identi
 
 * SAML 2.0 Providers (Okta, Ping, etc.) are for enterprise federation so employees can log into the AWS management console or CLI using their company credentials
 
-* OIDC / Web identity providers are for mobile and web applications so external customers can log in and securely access AWS resoueerces
+* OIDC / Web identity providers are for mobile and web applications so external customers can log in and securely access AWS resources
 
 **Significance of IdP:**  
 The main reason for adopting IdP is for centralized identity management instead of managing multiple credentials across different applications. Helps with:
@@ -293,6 +301,7 @@ Users only need to keep track of one set of credentials to log into all their co
 #### 15. IAM Policy Conditions  
 
 This is how conditions are specified in IAM policies:  
+
 ```
 "Condition": { 
   "{condition-operation}" : {
